@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>TP HTML</title>
+	  <meta charset="UTF-8"/>
+	  <style>
+	  h1 {
+	  color: rgb(253,254,254);
+	  }
+	  #title-info {
+	  background-color: black;
+	  text-align: center;
+	  }
+	  .ville {
+	  background-color: gray; 
+	  }
+	  .info {
+	  background-color:rgb(234,237,237);
+	  }
+	  .container {
+	  display:flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+	  }
+	  .container div {
+	  width: 200px;
+	  margin: 20px;
+	  }
+	  #image1 {
+	  position: relative;
+	  bottom: 70px;
+	  left: 90px;
+	  }
+	  
+	  #image2 {
+	  position: relative;
+	  bottom: 70px;
+	  left: 90px;
+	  }
+	  
+	  #image3 {
+	  position: relative;
+	  bottom: 70px;
+	  left: 90px;
+	  }
+	  #Paris{ flex-grow:1;}
+	  #Lyon{ flex-grow:1;}
+	  #Nancy{ flex-grow:2;}
+	  </style>
+	</head>
+	<body>
+	  <h1 id="title-info"> TP météo HTML</h1>
+	  <div class="container">
+	  <div id="Paris" class="ville" >
+	   <h2>Paris</h2>
+	  <p>2°C, pluvieux.</p>
+	  <div id="image1">
+	  <img src="pluie.png" alt="pluvieux" width="50">
+	  </div>
+	  </div>
+	  
+	  <div id="Lyon" class="ville" >
+	  <h2>Lyon</h2>
+	  <p>10°C, ensoleillé.</p>
+	  <div id="image2">
+	  <img src="soleil.png" alt="ensoleillé" width="50">
+	  </div>
+	  </div>
+	  
+	  <div id="Nancy" class="ville">
+	   <h2>Nancy</h2>
+	  <p>1°C, orageux.</p>
+	  <div id="image3">
+	  <img src="orage.png" alt="orageux" width="50">
+	  </div>
+	  </div>
+	  </div>
+	  
+	  <footer>
+	  <p id="footer" class="info">Hela SMATI
+	  <br />
+	  Icones météos par <a href="https://thenounproject.com">Nook Fulloption </a> </p>
+	  </footer>
+	  
+	  
+	  
+	</body>
+</html>
