@@ -47,8 +47,12 @@
 	  #Lyon{ flex-grow:1;}
 	  #Nancy{ flex-grow:2;}
 	  </style>
+	  <script>
+       let villeCourante = "Lyon"
+	   function showCity() { alert(villeCourante); }
+       </script>
 	</head>
-	<body>
+	<body onload="showCity()">
 	  <h1 id="title-info"> TP météo HTML</h1>
 	  <div class="container">
 	  <div id="Paris" class="ville" >
