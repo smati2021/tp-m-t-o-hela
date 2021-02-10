@@ -3,6 +3,7 @@
 	<head>
 	<title>TP HTML</title>
 	  <meta charset="UTF-8"/>
+	  
 	  <style>
 	  h1 {
 	  color: rgb(253,254,254);
@@ -48,12 +49,36 @@
 	  #Nancy{ flex-grow:2;}
 	  </style>
 	  <script>
-       let villeCourante = "Lyon"
-	   function showCity() { alert(villeCourante); }
+       function showCity( ) { 
+                       
+       let nomVilleSelectionnee = document.getElementById("villes-select").value;;
+       let villes = document.getElementsByClassName("ville");
+       let l = villes.length;
+       for (let i=0; i<l; i++) {
+       ville=villes[i];
+
+       if (villes[i].id == nomVilleSelectionnee ) {
+       ville.style.display= "" ;
+       } else {
+       ville.style.display= "none" ;
+                  }
+                }
+             }
+                              
        </script>
+	   
 	</head>
-	<body onload="showCity()">
+	
+	
+	<body>
 	  <h1 id="title-info"> TP météo HTML</h1>
+       <select onchange=showCity() name="villes" id="villes-select">
+            <option value="">--Please choose an option--</option>
+            <option value="Paris">Paris</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Nancy">Nancy</option>
+          
+        </select>
 	  <div class="container">
 	  <div id="Paris" class="ville" >
 	   <h2>Paris</h2>
